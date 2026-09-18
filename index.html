@@ -82,6 +82,10 @@ h1{font-family:"Barlow Condensed",sans-serif;font-size:clamp(38px,10vw,52px);lin
 .card:before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:0 3px 3px 0;background:var(--yellow);opacity:.9}
 .card:hover{transform:translateY(-2px);border-color:var(--line-strong);background:var(--surface-2)}
 .card:active{transform:scale(.985)}
+.banner-card{display:block;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#101418;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:.18s ease}
+.banner-card:hover{transform:translateY(-2px);border-color:var(--line-strong)}
+.banner-card:active{transform:scale(.985)}
+.banner-card img{display:block;width:100%;height:auto}
 .card.featured{background:linear-gradient(135deg,#f2c230,#e4aa16);border-color:#f8d86a;color:#101214}
 .card.featured:before{background:#101214}
 .card.featured .sub,.card.featured .micro{color:#4d421f}
@@ -132,15 +136,11 @@ footer{text-align:center;padding-top:30px}.footer-brand{font-family:"Barlow Cond
   <section aria-labelledby="cursos">
     <div class="section-title" id="cursos">Cursos específicos</div>
     <div class="stack">
-      <a class="card" href="https://palio.oficinaeficiente.com.br/" target="_blank" rel="noopener" data-label="curso-palio">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 16l1.6-5h10.8l1.6 5"/><path d="M4 16h16v3H4z"/><path d="M7 19v2M17 19v2"/></svg></div>
-        <div class="copy"><div class="micro">Curso online</div><div class="title">Caixa de Direção — Palio <span class="badge">R$ 97</span></div><div class="sub">Treinamento específico de diagnóstico e reparo.</div></div>
-        <div class="arrow"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></div>
+      <a class="banner-card" href="https://palio.oficinaeficiente.com.br/" target="_blank" rel="noopener" data-label="curso-palio" aria-label="Curso Caixa de Direção Palio">
+        <img src="assets/images/links/curso-palio.webp" alt="Curso Caixa de Direção Palio" loading="lazy">
       </a>
-      <a class="card" href="https://gol.oficinaeficiente.com.br/" target="_blank" rel="noopener" data-label="curso-gol">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 16l1.6-5h10.8l1.6 5"/><path d="M4 16h16v3H4z"/><path d="M7 19v2M17 19v2"/></svg></div>
-        <div class="copy"><div class="micro">Curso online</div><div class="title">Caixa de Direção — Gol G5 <span class="badge">R$ 97</span></div><div class="sub">Treinamento específico de diagnóstico e reparo.</div></div>
-        <div class="arrow"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></div>
+      <a class="banner-card" href="https://gol.oficinaeficiente.com.br/" target="_blank" rel="noopener" data-label="curso-gol" aria-label="Curso Caixa de Direção Gol G5">
+        <img src="assets/images/links/curso-gol.webp" alt="Curso Caixa de Direção Gol G5" loading="lazy">
       </a>
     </div>
   </section>
